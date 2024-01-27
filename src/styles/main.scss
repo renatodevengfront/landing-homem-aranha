@@ -1,5 +1,41 @@
-$bgColor: #1ecac7;
+@use 'variaveis';
+@use 'hero';
+
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     font-family: variaveis.$fonteTexto;
+}
 
 body {
-     background-color: $bgColor;
+     background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+     font-size: $fontSize;
+     line-height: $fontSize + 10px;
+     color: variaveis.$corTexto;
+}
+
+@mixin title($fontSize: 40px) {
+     @include text($fontSize);
+     color: variaveis.$corTexto;
+}
+
+.text--big {
+     @include text(18px);
+}
+
+.text {
+     @include text;
+}
+
+.title--big {
+     @include title(44px);
+}
+
+.title {
+     @include title;
 }

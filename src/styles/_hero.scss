@@ -1,0 +1,34 @@
+@use 'variaveis';
+
+.hero {
+     padding: 5.6vw;
+     min-height: 100vh;
+     background-image: url(../images/citycamada.jpg);
+     text-align: center;     
+     background-size: cover;
+     
+     .title {
+          margin-bottom: 30px;          
+     }
+     
+     img {
+          max-width: 200px;
+     }
+
+     button {
+          font-family: variaveis.$fonteTexto;
+          width: 17%;
+          height: 40px;
+          font-size: 16px;
+          margin-top: 2vw;
+          border-radius: 20px;
+          color: variaveis.$corTexto;
+          background-color: variaveis.$corDeFundo;
+          text-transform: uppercase;
+          border: none;
+          cursor: pointer;
+     }
+
+
+}
+
