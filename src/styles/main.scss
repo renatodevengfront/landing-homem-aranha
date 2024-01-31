@@ -1,5 +1,8 @@
 @use 'variaveis';
 @use 'hero';
+@use 'about';
+@use 'gallery';
+@use 'footer';
 
 * {
      box-sizing: border-box;
@@ -19,7 +22,7 @@ body {
      color: variaveis.$corTexto;
 }
 
-@mixin title($fontSize: 40px) {
+@mixin title($fontSize: 60px) {
      @include text($fontSize);
      color: variaveis.$corTexto;
 }
@@ -38,4 +41,29 @@ body {
 
 .title {
      @include title;
+
+     @media (max-width: 768px) {
+          @include title(24px);
+     }
+}
+
+.text-about {
+     font-size: 20px;
+     color: variaveis.$corSobre;
+
+     @media (max-width: 768px) {
+          font-size: 18px;
+          color: variaveis.$corSobre;
+     }
+
+}
+
+.title-about {
+     font-size: 40px;
+     color: variaveis.$corSobre;
+
+     @media (max-width: 768px) {
+          font-size: 22px;;
+          color: variaveis.$corSobre;
+     }
 }

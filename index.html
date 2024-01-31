@@ -8,28 +8,124 @@
 
      <link rel="stylesheet" href="dist/css/main.css">
 
-     <title>Homem Aranha</title>     
+     <title>Spider Man Homecoming</title>     
 </head>
 <body>
 
      <section class="hero">
           <div class="hero__content">
                <h1 class="title">
-                    Homem Aranha De Volta ao Lar
+                    Homem-Aranha<br> De Volta ao Lar
                </h1>               
                <figure>
-                    <img src="./dist/images/poster3.jpg" alt="">
+                    <img src="./dist/images/poster2.jpg" alt="">
                </figure>
                <ul>
                     <li>
                          <a href="https://www.youtube.com/watch?v=2x-2iYxgMFU&ab_channel=SonyPicturesBrasil" target="_blank">
-                              <button>Assista ao trailer</button>
+                              <button class="button">Assista ao trailer</button>
                          </a>
                     </li>
                </ul>
           </div>
-     </section>     
+     </section>    
+     
+     <section class="about">
+          <img src="./dist/images/poster6.jpeg" alt="">
+          <div class="about__text_container">
+               <h2 class="title-about">Sobre o Filme</h2>
+               <h3 class="text-about">Sinopse</h3>
+               <p class="text-about">
+                    O jovem Peter Parker/Homem-Aranha (TOM HOLLAND), que fez sua sensacional estreia em “Capitão América: Guerra Civil”, começa a se entender com a sua recém-descoberta identidade como super-herói lançador de teias de aranha. Empolgado com sua experiência com os Vingadores, Peter volta para casa, onde vive com sua Tia May (MARISA TOMEI), sob o olhar atento do seu novo mentor Tony Stark (ROBER DOWNEY JR.). Peter tenta retomar sua rotina normal, distraído com a ideia de provar que é mais do que apenas o Homem-Aranha, grande amigo da vizinhança. Mas quando o Abutre (MICHAEL KEATON) surge como um novo vilão, tudo que Peter considera mais importante estará em perigo.
+               </p>
+          </div>
+     </section>
 
-     <script></script>
+     <section class="gallery">
+          <nav class="gallery__tabs">
+               <button data-tab-button="outros_titulos" class="gallery__tabs__button gallery__tabs__button--is-active">
+                    Veja também
+               </button>
+               <button data-tab-button="elenco" class="gallery__tabs__button">
+                    Elenco
+               </button>
+               <button data-tab-button="mais" class="gallery__tabs__button">
+                    Galeria
+               </button>
+          </nav>
+          <ul data-tab-id="outros_titulos" class="gallery__list gallery__list--is-active">
+               <li class="gallery__list__item">
+                    <img src="./dist/images/titulo1.jpg" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/titulo2.jpeg" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/espetacular.jpg" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/titulo3.webp" alt="">
+               </li>
+          </ul>
+          <ul data-tab-id="elenco" class="gallery__list">
+               <li class="gallery__list__item">
+                    <img src="./dist/images/tomholland.jpg" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/zendaya.jpeg" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/robertdowneyjr.webp" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/keaton.webp" alt="">
+               </li>
+          </ul>
+          <ul data-tab-id="mais" class="gallery__list">
+               <li class="gallery__list__item">
+                    <img src="./dist/images/poster1.jpg" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/poster4.webp" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/poster5.jpg" alt="">
+               </li>
+               <li class="gallery__list__item">
+                    <img src="./dist/images/poster3.jpg" alt="">
+               </li>
+          </ul>
+     </section>
+
+     <footer class="footer">
+          <div class="footer__container">
+               <img src="./dist/images/sony_logo.png" alt="">
+               <ul class="footer__links">
+                    <li class="footer__links__item">
+                         <div class="language-selector">
+                              <img src="./dist/images/bandeira.webp" alt="">
+                              <select>
+                                   <option>EUA</option>
+                                   <option selected>Brasil</option>
+                              </select>
+                         </div>
+                    </li>
+                    <li class="footer__links__item">
+                         <a href="#" class="text">Política de Privacidade e Cookies</a>
+                    </li>
+                    <li class="footer__links__item">
+                         <a href="#" class="text">Termos de Uso</a>
+                    </li>
+                    <li class="footer__links__item">
+                         <a href="#" class="text">Consentimento de cookies</a>
+                    </li>
+               </ul>
+               <p class="text">
+                    © 2021 Sony Pictures Releasing of Brasil, Ltd.
+               </p> 
+          </div>
+     </footer>
+
+     <script src="./src/main.js"></script>
 </body>
 </html>
